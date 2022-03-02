@@ -1,0 +1,24 @@
+{
+  "name": "week_1_day_3_express_lab-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyFord2002/Week_1_Day_3_Express_Lab-HW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyFord2002/Week_1_Day_3_Express_Lab-HW/issues"
+  },
+  "homepage": "https://github.com/TonyFord2002/Week_1_Day_3_Express_Lab-HW#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

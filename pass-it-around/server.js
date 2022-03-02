@@ -35,15 +35,19 @@ app.set('view engine', 'hypatia')
 //- Add a link to start over, which directs the user back to the home page.
 
 
+
 app.get('/', (req, res) => {
-	res.render('template', { title: '99 Bottles', message: "99 bottles of beer on the wall", content: '<a href="https://www.google.com">Take one down! Pass it around!</a>'})
+	res.render('template', { title: '99 Bottles', message: "99 bottles of beer on the wall", content: "<a href='/98'>Take one down and pass it around!</a>"})
+  })
+  
+  app.get('/0', (req, res) => {
+      res.render('template', { title: '99 Bottles', message:  "0 bottles of beer on the wall", content: "<a href='/'>Start Over!</a>"})
   })
 
-  
-  
-  
-  
-  
+app.get('/:numOfBottles', (req,res) =>{
+    res.render('template', { title: '99 Bottles', message: req.params.numOfBottles + " bottles of beer on the wall", content: `<a href = '/${(numOfBottles=req.params.numOfBottles-1)}'> Take one down and pass it around!</a>`})
+})
+
   app.listen(port, () => {
     console.log('listening on port: ' + port);
 });

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/TonyFord2002/Week_1_Day_3_Express_Lab-HW#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
   }
 }
